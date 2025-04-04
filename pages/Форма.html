@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Форма</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="container">
+<section class="menu">
+    <h1>Меню</h1>
+    <ul>
+        <li class="menu-item"><a href="../index.html" target="_blank">Головна</a></li>
+        <li class="menu-item"><a href="Якоря.html" target="_blank">Якоря</a></li>
+        <li class="menu-item"><a href="Контакти.html" target="_blank">Контакти</a></li>
+        <li class="menu-item"><a href="Галерея.html" target="_blank">Галерея</a></li>
+        <li class="menu-item"><a href="Форма.html" target="_blank">Форма</a></li>
+    </ul>
+</section>
+<div class="form">
+    <h2>Реєстраційна Форма</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Особисті дані</legend>
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+
+            <label for="age">Вік:</label>
+            <input type="number" id="age" name="age" min="18" max="100" required>
+
+            <label for="gender">Стать:</label>
+            <select id="gender" name="gender">
+                <option value="male">Чоловік</option>
+                <option value="female">Жінка</option>
+                <option value="other">Інше</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Контактні дані</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+380123456789" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Додаткова інформація</legend>
+
+            <p>
+                <label>Хобі:</label>
+            </p>
+            <p>
+                <input type="checkbox" id="sport" name="hobby" value="sport">
+                <label for="sport">Спорт</label>
+            </p>
+            <p>
+                <input type="checkbox" id="music" name="hobby" value="music">
+
+                <label for="music">Музика</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="reading" name="hobby" value="reading">
+                <label for="reading">Читання</label>
+            </p>
+
+            <label for="comments">Інше:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Ваші коментарі..."></textarea>
+
+        </fieldset>
+
+        <button type="submit">Надіслати</button>
+        <button type="reset">Скинути</button>
+        <button type="button" onclick="alert('Спеціальна дія виконана!')">Спеціальна дія</button>
+
+    </form>
+</div>
+</body>
+
+</html>
