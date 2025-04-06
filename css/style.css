@@ -57,3 +57,20 @@ body {
     width: 350px;
     border-radius: 5px;
 }
+
+.info-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.info-img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.info-text {
+    max-width: 600px;
+}
+
