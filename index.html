@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
+    <title>Float та Clear</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="container">
@@ -11,23 +11,25 @@
     <h1>Меню</h1>
     <ul>
         <li class="menu-item"><a href="index.html" target="_blank">Головна</a></li>
-        <li class="menu-item"><a href="pages/Якоря.html" target="_blank">Якоря</a></li>
-        <li class="menu-item"><a href="pages/Контакти.html" target="_blank">Контакти</a></li>
-        <li class="menu-item"><a href="pages/Галерея.html" target="_blank">Галерея</a></li>
-        <li class="menu-item"><a href="pages/Форма.html" target="_blank">Форма</a></li>
+        <li class="menu-item"><a href="pages/Overflow.html" target="_blank">Overflow</a></li>
+        <li class="menu-item"><a href="pages/Reset.html" target="_blank">Reset</a></li>
+        <li class="menu-item"><a href="pages/Sticky.html" target="_blank">Sticky</a></li>
+        <li class="menu-item"><a href="pages/normalize.html" target="_blank">Normalize</a></li>
     </ul>
 </section>
-<div class="info-block">
+<div>
     <a href="images/hello.jpeg" target="_blank" rel="noopener noreferrer">
-        <img src="images/hello.jpeg" alt="hello" class="info-img">
+        <img src="images/hello.jpeg" alt="hello" class="info-img float-left">
     </a>
-    <section class="info-text">
-        <h2><b>Ласкаво просимо на наш сайт!</b></h2>
-        <p><b>Цей сайт створено з метою ознайомлення з основами HTML та CSS. Тут ви знайдете приклади різних типів
-            селекторів,
-            стилізації елементів та реалізацію простої структури вебсторінки.</b></p>
-    </section>
 </div>
+<h2>Ласкаво просимо на наш сайт!</h2>
+<p><em>Цей текст обтікає плаваючі елементи.</em></p>
+<div class="clear"></div>
+<p><em>Цей текст йде після очищення обтікання.</em></p>
+<p>Цей сайт створено з метою ознайомлення з основами HTML та CSS. Тут ви знайдете приклади
+    різних типів селекторів, стилізації елементів та реалізацію простої структури вебсторінки.</p>
+<p>На кожній зі сторінок ви знайдете основні <em>блокові та інлайнові елементи</em>.</p>
+
 </body>
 
 </html>
